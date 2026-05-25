@@ -71,7 +71,7 @@ def page_auth():
         page_auth = browser.new_page()
         page_auth.goto("https://www.saucedemo.com/")
         input_username = page_auth.locator("#user-name")
-        input_username.fill("standard_user")
+        input_username.fill("error_user")
         input_password = page_auth.locator("#password")
         input_password.fill("secret_sauce")
         add_btn = page_auth.locator("#login-button")
